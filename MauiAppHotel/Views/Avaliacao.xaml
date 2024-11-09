@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Avaliacao"
+             Title="Avaliacoes" 
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+        <Label Text="Avaliações"
+        FontFamily="KarlaBold"
+        TextTransform="Uppercase"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        FontSize="Subtitle"
+        TextColor="{StaticResource Magenta}"/>
+
+        <Image
+        Source="C:\Users\vboxuser\Downloads\quartoluxo.jpg"
+        HeightRequest="185"
+        Aspect="AspectFit"
+        SemanticProperties.Description="dot net bot in a race car number eight"/>
+
+
+        
+        <Label Grid.Row="0" Grid.Column="0"
+ Text="Nota 9.5 - Camila - Boa recepção, funcionários super educados, café da manhã impecável!!! Fomos em comemoração de aniversário e corresponderam a todo o combinado: quarto decorado e bolo de parabéns no café da manhã!"
+ FontFamily="Karla"
+ VerticalOptions="Center" 
+ HorizontalOptions="Center"
+ TextColor="{StaticResource Magenta}"/>
+        <Label Grid.Row="0" Grid.Column="0"
+Text="Nota 9.0 - Adalberto - Um final de semana perfeito, a cama é maravilhosa ,a hidro funciona perfeitamente [além da vista que é um espetáculo]. O café da manhã servido no quarto não tem preço que pague. A decoração no contexto em geral é linda."
+ FontFamily="Karla"
+ VerticalOptions="Center" 
+ HorizontalOptions="Center"
+ TextColor="{StaticResource White}"/>
+
+        <Label Grid.Row="2" Grid.Column="2"
+Text="Nota 8.5 - Marcio Gil - Gostei de tudo: instalações, limpeza, café da manhã, funcionários.Se tivesse um lugar no quarto ou no hotel para usar o notebook, seria interessante."
+ VerticalOptions="Center" 
+ HorizontalOptions="Center"
+ TextColor="{StaticResource Magenta}"/>
+
+     <Button Text="Voltar" Clicked="Button_Clicked"
+             HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+
+</ContentPage>
+    
+    

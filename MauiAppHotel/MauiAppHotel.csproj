@@ -57,9 +57,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\Copacabana.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\Kalam-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Light.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Karla-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Karla-Regular.ttf" />
+	  <None Remove="Resources\Images\Copacabana.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -69,10 +76,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\Sobre.xaml.cs">
+	    <DependentUpon>Sobre.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\Avaliacao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Sobre.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

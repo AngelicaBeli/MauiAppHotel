@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.NewPage1"
+             Title="                Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Aplicativo Hotel"
+               FontFamily="KarlaBold"
+       TextTransform="Uppercase"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center"
+       FontSize="Subtitle"
+       TextColor="{StaticResource Magenta}"/>
+
+        <Label Grid.Row="0" Grid.Column="0"
+       Text="Desenvolvido por Angelica Silva"
+        FontFamily="Karla"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        TextColor="{StaticResource Magenta}"/>
+        <Label Grid.Row="1" Grid.Column="0"
+       Text="Centro Paula Souza"
+        FontFamily="Karla"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        TextColor="{StaticResource Magenta}"/>
+        <Label Grid.Row="1" Grid.Column="0"
+Text="2024"
+ FontFamily="Karla"
+ VerticalOptions="Center" 
+ HorizontalOptions="Center"
+ TextColor="{StaticResource Magenta}"/>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="30">
+            <Button Text="Voltar" Clicked="Button_Clicked"
+                HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+    
+</ContentPage>
