@@ -77,8 +77,7 @@
                     </Frame>
 
                     <Button Text="Avançar" HorizontalOptions="Center" Clicked="Button_Clicked"  />
-                    <Button Text="Sobre" Clicked="Button_Clicked_1"/>
-                    <Button Text="Avaliacoes" Clicked="Button_Clicked_2"/>
+                    
 
 
 
