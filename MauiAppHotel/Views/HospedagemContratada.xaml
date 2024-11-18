@@ -17,25 +17,22 @@
         <Frame Margin="10">
             <StackLayout  Orientation="Horizontal" >
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Adultos: " />
+                    <Label Text="Nro de participantes: " />
                     <Label Text="{Binding QntAdultos}" 
                            TextColor="{StaticResource Magenta}" />
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Crianças: " />
-                    <Label Text="{Binding QntCriancas}" 
-                           TextColor="{StaticResource Magenta}" />
-                </HorizontalStackLayout>
+                
             </StackLayout>
         </Frame>
 
         <Frame Margin="10">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+                <Label Grid.Row="0" Grid.Column="0" Text="Data inicio:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Data fim:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Duracao evento:" />
+                
 
                 <Label Grid.Row="1" Grid.Column="0"
                        Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"

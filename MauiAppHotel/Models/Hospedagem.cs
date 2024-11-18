@@ -5,6 +5,7 @@
         public Quarto QuartoSelecionado { get; set; }
         public int QntAdultos { get; set; }
         public int QntCriancas { get; set; }
+        public double txtcusto { get; set; }
         public DateTime DataCheckIn { get; set; }
         public DateTime DataCheckOut { get; set; }
         public int Estadia
@@ -16,8 +17,8 @@
             get
             {
                 double valor_adultos = QntAdultos * QuartoSelecionado.ValorDiariaAdulto;
-                double valor_criancas = QntCriancas * QuartoSelecionado.ValorDiariaCrianca;
-                double total = (valor_adultos + valor_criancas) * Estadia;
+                
+                double total = (valor_adultos) * Estadia;
                 return total;
             }
         }

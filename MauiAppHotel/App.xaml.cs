@@ -8,25 +8,25 @@ namespace MauiAppHotel
         {
               new Quarto()
               {
-               Descricao = "Suíte Super Luxo",
+               Descricao = "Evento Super Luxo",
                ValorDiariaAdulto = 110.0,
                ValorDiariaCrianca = 55.0
               },
               new Quarto()
               {
-               Descricao = "Suíte Luxo",
+               Descricao = "Evento Luxo",
                ValorDiariaAdulto = 80.0,
                ValorDiariaCrianca = 40.0
               },
               new Quarto()
               {
-               Descricao = "Suíte Single",
+               Descricao = "Evento Simples",
                ValorDiariaAdulto = 50.0,
                ValorDiariaCrianca = 25.0
               },
               new Quarto()
               {
-               Descricao = "Suíte Crise",
+               Descricao = "Evento Basico",
                ValorDiariaAdulto = 25.0,
                ValorDiariaCrianca = 12.5
               },
@@ -43,7 +43,7 @@ namespace MauiAppHotel
                 var window = base.CreateWindow(activationState);
 
                 window.Width = 400;
-                window.Height = 600;
+                window.Height = 800;
 
                 return window;
               }

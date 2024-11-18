@@ -12,6 +12,8 @@ public partial class ContratacaoHospedagem : ContentPage
         PropriedadesApp = (App)Application.Current;
         pck_quarto.ItemsSource = PropriedadesApp.lista_quartos;
 
+
+
         dtpck_checkin.MinimumDate = DateTime.Now;
         dtpck_checkin.MaximumDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month + 1, DateTime.Now.Day);
 
@@ -25,9 +27,9 @@ public partial class ContratacaoHospedagem : ContentPage
         {
             Hospedagem h = new Hospedagem
             {
-                QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
+                
+                QuartoSelecionado= (Quarto)pck_quarto.SelectedItem,
                 QntAdultos = Convert.ToInt32(stp_adultos.Value),
-                QntCriancas = Convert.ToInt32(stp_criancas.Value),
                 DataCheckIn = dtpck_checkin.Date,
                 DataCheckOut = dtpck_checkout.Date,
             };
